@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1097511783274",
+    "project_id": "instagram-sky",
+    "storage_bucket": "instagram-sky.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097511783274:android:60bc67a2b52936ac86f313",
+        "android_client_info": {
+          "package_name": "sky.sky.instagram_app_sky"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097511783274-4pfcchljmr63v2hdq6edrl9rlgturtgr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sky.sky.instagram_app_sky",
+            "certificate_hash": "72c53d3ba39ae17eac2da9e77281eb1f40d1848b"
+          }
+        },
+        {
+          "client_id": "1097511783274-vijc7snuvmobtumn7anj0up6tejk67fh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3ahk0tdoz-GzDhkobhH5pdNP4Y9XJWsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097511783274-vijc7snuvmobtumn7anj0up6tejk67fh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1097511783274-pqo0lhb940e095mscog38sumq7r587qm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "sky.sky.instagramAppSky"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
