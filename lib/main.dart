@@ -9,6 +9,7 @@ import 'dart:developer' as devtools show log;
 
 import 'package:instagram_app_sky/state/auth/providers/is_logged_in_provider.dart';
 import 'package:instagram_app_sky/views/components/loading/loading_screen.dart';
+import 'package:instagram_app_sky/views/login/login_view.dart';
 
 extension Log on Object {
   void log() => devtools.log(toString());
@@ -87,33 +88,6 @@ class MainView extends StatelessWidget {
             child: const Text('Logout'),
           );
         },
-      ),
-    );
-  }
-}
-
-class LoginView extends ConsumerWidget {
-  const LoginView({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Login View'),
-      ),
-      body: Column(
-        children: [
-          TextButton(
-            onPressed: ref.read(authStateProvider.notifier).loginWithGoogle,
-            child: const Text('sign in with google'),
-          ),
-          TextButton(
-            onPressed: ref.read(authStateProvider.notifier).loginWithFacebook,
-            child: const Text('sign in with facebook'),
-          ),
-        ],
       ),
     );
   }

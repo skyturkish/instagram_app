@@ -13,3 +13,13 @@ bak neler öğreniyorsun bir projede iyi işte senden daha önde olanları izlem
 onu kullanıyor sayfanın contexi yerine, yani hangi contexi gönderdiğin çok önemli
 
 7:38:00'da ve devamında diyorki Watch'ın amacı yeni bir build almak ama listen'in amacı, buysa bunu yap demek. bir fonksiyon çalıştırmak yani
+
+8:00:00 civarı yaptığı RichText mantığı çok güzel, aynı mantığı sen de yapabilirsin, custom elevated button yaparken falan. factory dersin auth elevated button dersin, diğeride başka bir şey olur falan iyi yani. kullan bunu ama bu da OOP şu kitapları oku artık
+
+as_html_color_to_color'un nasıl çalıştığını tam anlamıyla anla
+
+bak bak bak ne düşündüm, hem bloc ile hem de riverpod ile kayıyorsun ya sağa sola, navigate ihtiyaç duyman
+senin fazla sayfa olduğundan ortaya çıkmıştı ama second-hand'de add product ekranı gibi yerleri tabBar gibi yapsaydın.
+ne fazla navigation'a ihtiyaç duyardın her şeyi main içinde if if if şeklinde halledebilirdin. Bir şey altta dallanıyorsa
+onu başka bir bloca almak yerine bunları yyapabilirsintab gibi ne bilim form gibi leri ileri der ama aslında tab barda olur
+böylece navigator.pop gibi şeylere gerek kalmaz ve kod daha okunaklı şekilde olur
