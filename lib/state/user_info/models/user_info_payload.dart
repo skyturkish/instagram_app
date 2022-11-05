@@ -1,8 +1,8 @@
 import 'dart:collection' show MapView;
 
 import 'package:flutter/foundation.dart' show immutable;
-import 'package:instagram_app_sky/state/auth/constants/firebase_field_name.dart';
-import 'package:instagram_app_sky/state/auth/posts/typedefs/user_id.dart';
+import 'package:instagram_app_sky/state/constants/firebase_field_name.dart';
+import 'package:instagram_app_sky/state/posts/typedefs/user_id.dart';
 
 @immutable
 class UserInfoPayload extends MapView<String, String> {

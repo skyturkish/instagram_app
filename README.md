@@ -22,4 +22,7 @@ bak bak bak ne düşündüm, hem bloc ile hem de riverpod ile kayıyorsun ya sa�
 senin fazla sayfa olduğundan ortaya çıkmıştı ama second-hand'de add product ekranı gibi yerleri tabBar gibi yapsaydın.
 ne fazla navigation'a ihtiyaç duyardın her şeyi main içinde if if if şeklinde halledebilirdin. Bir şey altta dallanıyorsa
 onu başka bir bloca almak yerine bunları yyapabilirsintab gibi ne bilim form gibi leri ileri der ama aslında tab barda olur
-böylece navigator.pop gibi şeylere gerek kalmaz ve kod daha okunaklı şekilde olur
+böylece navigator.pop gibi şeylere gerek kalmaz ve kod daha okunaklı şekilde olur.
+
+9:09:00 'da adam lottie anşiamstonları teker teker ayırıyorya hepsini ayrı ayrı sayfalara koyuyor aslında çok hoş bir şey bu,
+diğer sayfaları şişirmiyor ve orada zaten çıkacak olan bir şeyi çıkarmıyor. çok güzel bundan da çok şey alabilirsin
