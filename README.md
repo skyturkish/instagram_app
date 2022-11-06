@@ -26,3 +26,5 @@ böylece navigator.pop gibi şeylere gerek kalmaz ve kod daha okunaklı şekilde
 
 9:09:00 'da adam lottie anşiamstonları teker teker ayırıyorya hepsini ayrı ayrı sayfalara koyuyor aslında çok hoş bir şey bu,
 diğer sayfaları şişirmiyor ve orada zaten çıkacak olan bir şeyi çıkarmıyor. çok güzel bundan da çok şey alabilirsin
+
+burada seni asıl etkileyen şey hepsini ayrı ayrı, likes comments gibi ayırması bu, ve kendi de dediği gibi search sistemi fazla iyi değil firebase'in o yüzden mongoDB'ye tabiki de şans vereceksin ve oradada çalışacaksın çünkü, yani yarın bir gün firebase kapatılsa ne yaparsın onu geçtim yeni şeyler denemekten korkmamalısın o yüzden firebase ve mongoDB üzerinden aynı anda çalışabilmelisin ama mentalite biraz daha iyi sağlandı bu iyi bir şey .

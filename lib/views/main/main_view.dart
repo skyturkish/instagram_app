@@ -9,6 +9,9 @@ import 'package:instagram_app_sky/views/components/dialogs/alert_dialog_model.da
 import 'package:instagram_app_sky/views/components/dialogs/logout_dialog.dart';
 import 'package:instagram_app_sky/views/constants/strings.dart';
 import 'package:instagram_app_sky/views/create_new_post/create_new_post_view.dart';
+import 'package:instagram_app_sky/views/tabs/home/home_view.dart';
+//import 'package:instagram_app_sky/views/tabs/home/home_view.dart';
+import 'package:instagram_app_sky/views/tabs/search/search_view.dart';
 import 'package:instagram_app_sky/views/tabs/user_posts/user_posts_view.dart';
 
 class MainView extends ConsumerStatefulWidget {
@@ -34,16 +37,16 @@ class _MainViewState extends ConsumerState<MainView> {
                 FontAwesomeIcons.film,
               ),
               onPressed: () async {
-                //pick a video first
+                // pick a video first
                 final videoFile = await ImagePickerHelper.pickVideoFromGallery();
                 if (videoFile == null) {
                   return;
                 }
 
-                //reset the postSettingProvider
+                // reset the postSettingProvider
                 ref.refresh(postSettingProvider);
 
-                //go to the screen to create a new post
+                // go to the screen to create a new post
                 if (!mounted) {
                   return;
                 }
@@ -124,8 +127,8 @@ class _MainViewState extends ConsumerState<MainView> {
         body: const TabBarView(
           children: [
             UserPostsView(),
-            UserPostsView(),
-            UserPostsView(),
+            SearchView(),
+            HomeView(),
           ],
         ),
       ),
