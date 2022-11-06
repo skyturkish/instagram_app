@@ -3,7 +3,7 @@ import 'package:instagram_app_sky/state/auth/backend/authenticator.dart';
 import 'package:instagram_app_sky/state/auth/models/auth_result.dart';
 import 'package:instagram_app_sky/state/auth/models/auth_state.dart';
 import 'package:instagram_app_sky/state/posts/typedefs/user_id.dart';
-import 'package:instagram_app_sky/state/user_info/models/backend/user_info_storage.dart';
+import 'package:instagram_app_sky/state/user_info/backend/user_info_storage.dart';
 
 class AuthStateNotifier extends StateNotifier<AuthState> {
   final _authenticator = const Authenticator();

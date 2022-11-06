@@ -2,9 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:instagram_app_sky/state/auth/providers/auth_state_provider.dart';
+import 'package:instagram_app_sky/state/image_upload/helpers/image_picker_helper.dart';
+import 'package:instagram_app_sky/state/image_upload/models/file_type.dart';
+import 'package:instagram_app_sky/state/post_settings/providers/post_settings_provider.dart';
 import 'package:instagram_app_sky/views/components/dialogs/alert_dialog_model.dart';
 import 'package:instagram_app_sky/views/components/dialogs/logout_dialog.dart';
 import 'package:instagram_app_sky/views/constants/strings.dart';
+import 'package:instagram_app_sky/views/create_new_post/create_new_post_view.dart';
 import 'package:instagram_app_sky/views/tabs/user_posts/user_posts_view.dart';
 
 class MainView extends ConsumerStatefulWidget {
@@ -30,54 +34,54 @@ class _MainViewState extends ConsumerState<MainView> {
                 FontAwesomeIcons.film,
               ),
               onPressed: () async {
-                // pick a video first
-                // final videoFile = await ImagePickerHelper.pickVideoFromGallery();
-                // if (videoFile == null) {
-                //   return;
-                // }
+                //pick a video first
+                final videoFile = await ImagePickerHelper.pickVideoFromGallery();
+                if (videoFile == null) {
+                  return;
+                }
 
-                // reset the postSettingProvider
-                // ref.refresh(postSettingProvider);
+                //reset the postSettingProvider
+                ref.refresh(postSettingProvider);
 
-                // go to the screen to create a new post
+                //go to the screen to create a new post
                 if (!mounted) {
                   return;
                 }
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(
-                //     builder: (_) => CreateNewPostView(
-                //       fileType: FileType.video,
-                //       fileToPost: videoFile,
-                //     ),
-                //   ),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => CreateNewPostView(
+                      fileType: FileType.video,
+                      fileToPost: videoFile,
+                    ),
+                  ),
+                );
               },
             ),
             IconButton(
               onPressed: () async {
                 // pick an image first
-                // final imageFile = await ImagePickerHelper.pickImageFromGallery();
-                // if (imageFile == null) {
-                //   return;
-                // }
+                final imageFile = await ImagePickerHelper.pickImageFromGallery();
+                if (imageFile == null) {
+                  return;
+                }
 
-                // // reset the postSettingProvider
-                // ref.refresh(postSettingProvider);
+                // reset the postSettingProvider
+                ref.refresh(postSettingProvider);
 
-                // // go to the screen to create a new post
-                // if (!mounted) {
-                //   return;
-                // }
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(
-                //     builder: (_) => CreateNewPostView(
-                //       fileType: FileType.image,
-                //       fileToPost: imageFile,
-                //     ),
-                //   ),
-                // );
+                // go to the screen to create a new post
+                if (!mounted) {
+                  return;
+                }
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => CreateNewPostView(
+                      fileType: FileType.image,
+                      fileToPost: imageFile,
+                    ),
+                  ),
+                );
               },
               icon: const Icon(
                 Icons.add_photo_alternate_outlined,
