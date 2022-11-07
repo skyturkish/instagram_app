@@ -28,3 +28,7 @@ böylece navigator.pop gibi şeylere gerek kalmaz ve kod daha okunaklı şekilde
 diğer sayfaları şişirmiyor ve orada zaten çıkacak olan bir şeyi çıkarmıyor. çok güzel bundan da çok şey alabilirsin
 
 burada seni asıl etkileyen şey hepsini ayrı ayrı, likes comments gibi ayırması bu, ve kendi de dediği gibi search sistemi fazla iyi değil firebase'in o yüzden mongoDB'ye tabiki de şans vereceksin ve oradada çalışacaksın çünkü, yani yarın bir gün firebase kapatılsa ne yaparsın onu geçtim yeni şeyler denemekten korkmamalısın o yüzden firebase ve mongoDB üzerinden aynı anda çalışabilmelisin ama mentalite biraz daha iyi sağlandı bu iyi bir şey .
+
+
+
+Tüm loadingleri tek bir yerde toplamak çok akıllıca, bunu daha sık yapmalısın
